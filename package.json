@@ -1,0 +1,13 @@
+{
+  "name": "vue3-data-container",
+  "version": "1.0.0",
+  "description": "vue components that provide data request",
+  "main": "src/data-container.vue",
+  "repository": "https://github.com/all-in-js/vue3-data-container.git",
+  "author": "famanoder",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
