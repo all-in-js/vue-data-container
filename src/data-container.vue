@@ -1,6 +1,6 @@
 <template>
   <slot
-    v-if="loading"
+    v-if="useLoading && loading"
     name="loading">loading...</slot>
   <slot
     v-else-if="error"
@@ -9,6 +9,8 @@
     <slot></slot>
     <slot
       name="data"
+      :error="error"
+      :loading="loading"
       :res="res"></slot>
   </template>
 </template>
@@ -18,6 +20,10 @@ import { reactive, toRefs, onMounted } from 'vue';
 const DataContainer = {
   name: 'data-container',
   props: {
+    useLoading: {
+      type: Boolean,
+      default: true
+    },
     method: String,
     url: String,
     params: Object,
