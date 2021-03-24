@@ -22,7 +22,7 @@ const DataContainer = {
   props: {
     useLoading: {
       type: Boolean,
-      default: true
+      default: false
     },
     method: String,
     url: String,
